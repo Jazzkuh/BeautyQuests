@@ -75,7 +75,7 @@ public abstract class QuestOptionItem extends QuestOption<ItemStack> {
 	
 	@Override
 	public void click(FinishGUI gui, Player p, ItemStack item, int slot, ClickType click) {
-		if (click == ClickType.MIDDLE) {
+		if (click == ClickType.RIGHT) {
 			setValue(null);
 			gui.inv.setItem(slot, getItemStack());
 		}else {
