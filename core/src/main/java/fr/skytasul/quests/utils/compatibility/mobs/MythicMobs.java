@@ -65,8 +65,9 @@ public class MythicMobs implements MobFactory<MythicMob> {
 	public String getName(MythicMob data) {
 		try {
 			PlaceholderString displayName = data.getDisplayName();
-			if (displayName != null) return displayName.get();
-		}catch (NoSuchMethodError e) {}
+			if (displayName != null) return displayName.get()
+					.replace(" §8[§7Lvl <caster.level>§8]", "");
+		} catch (NoSuchMethodError ignored) {}
 		return data.getInternalName();
 	}
 

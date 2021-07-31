@@ -15,7 +15,6 @@ import fr.skytasul.quests.gui.creation.QuestObjectGUI;
 import fr.skytasul.quests.utils.Lang;
 import fr.skytasul.quests.utils.Utils;
 import fr.skytasul.quests.utils.compatibility.DependenciesManager;
-import fr.skytasul.quests.utils.compatibility.SkillAPI;
 
 public class XPReward extends AbstractReward {
 
@@ -31,9 +30,7 @@ public class XPReward extends AbstractReward {
 	}
 
 	public String give(Player p) {
-		if (DependenciesManager.skapi && QuestsConfiguration.xpOverridedSkillAPI()) {
-			SkillAPI.giveExp(p, exp);
-		}else p.giveExp(exp);
+		p.giveExp(exp);
 		return exp + " " + Lang.Exp.toString();
 	}
 

@@ -570,7 +570,7 @@ misc:
     lava: Lava bucket
     milk: Milk bucket
   questItemLore: §e§oQuest Item
-  hologramText: §8§lQuest NPC
+  hologramText: §7Quest
   mobsProgression: '§6§l{0}: §r§e{1}/{2}'
   entityType: '§eEntity type: {0}'
   enabled: Enabled
@@ -579,7 +579,7 @@ misc:
   notSet: §cnot set
   unused: §2§lUnused
   used: §a§lUsed
-  remove: §7Middle-click to remove
+  remove: §7Right-click to remove
   or: or
   amount: '§eAmount: {0}'
   items: items

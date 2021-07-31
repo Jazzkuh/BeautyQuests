@@ -30,27 +30,28 @@ public class ConfirmGUI implements CustomInventory {
 	}
 	
 	public Inventory open(Player p){
-		Inventory inv = Bukkit.createInventory(null, InventoryType.HOPPER, Lang.INVENTORY_CONFIRM.toString());
+		Inventory inv = Bukkit.createInventory(null, 9 * 2, Lang.INVENTORY_CONFIRM.toString());
 		
-		inv.setItem(1, ItemUtils.item(XMaterial.LIME_DYE, Lang.confirmYes.toString()));
-		inv.setItem(2, ItemUtils.item(XMaterial.PAPER, indication, lore == null ? null : new String[] { lore }));
-		inv.setItem(3, ItemUtils.item(XMaterial.RED_DYE, Lang.confirmNo.toString()));
+		inv.setItem(11, ItemUtils.item(XMaterial.LIME_DYE, Lang.confirmYes.toString()));
+		inv.setItem(4, ItemUtils.item(XMaterial.BOOK, indication, lore == null ? null : new String[] { lore }));
+		inv.setItem(15, ItemUtils.item(XMaterial.BARRIER, Lang.confirmNo.toString()));
 		
 		return p.openInventory(inv).getTopInventory();
 	}
 
 	public boolean onClick(Player p, Inventory inv, ItemStack current, int slot, ClickType click){
 		Inventories.closeAndExit(p);
-		if (slot == 1) {
+		if (slot == 11) {
 			yes.run();
-		}else if (slot == 3) {
+		}else if (slot == 15) {
 			no.run();
 		}
 		return true;
 	}
 	
 	public CloseBehavior onClose(Player p, Inventory inv){
-		return CloseBehavior.REOPEN;
+		Inventories.closeAndExit(p);
+		return CloseBehavior.NOTHING;
 	}
 
 }

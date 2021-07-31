@@ -109,7 +109,6 @@ public class QuestsConfiguration {
 		disableDialogClick = config.getBoolean("disableDialogClick");
 		sounds = config.getBoolean("sounds");
 		fireworks = config.getBoolean("fireworks");
-		gps = DependenciesManager.gps && config.getBoolean("gps");
 		skillAPIoverride = config.getBoolean("skillAPIoverride");
 		scoreboard = config.getBoolean("scoreboards");
 		item = XMaterial.matchXMaterial(config.getString("item")).orElse(XMaterial.BOOK);
@@ -126,13 +125,7 @@ public class QuestsConfiguration {
 		showCustomHologramName = config.getBoolean("showCustomHologramName");
 		hologramsHeight = 0.28 + config.getDouble("hologramsHeight");
 		splittedAdvancementPlaceholderMax = config.getInt("splittedAdvancementPlaceholderMax");
-		hookAcounts = DependenciesManager.acc ? config.getBoolean("accountsHook") : false;
-		if (hookAcounts) {
-			Bukkit.getPluginManager().registerEvents(new Accounts(), BeautyQuests.getInstance());
-			BeautyQuests.logger.info("AccountsHook is now managing player datas for quests !");
-		}
 		dSetName = config.getString("dynmap.markerSetName");
-		if (dSetName == null || dSetName.isEmpty()) DependenciesManager.dyn = false;
 		dIcon = config.getString("dynmap.markerIcon");
 		dMinZoom = config.getInt("dynmap.minZoom");
 		finishSound = config.getString("finishSound");

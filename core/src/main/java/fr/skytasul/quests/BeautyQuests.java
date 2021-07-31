@@ -48,7 +48,6 @@ import fr.skytasul.quests.utils.DebugUtils;
 import fr.skytasul.quests.utils.Lang;
 import fr.skytasul.quests.utils.SpigotUpdater;
 import fr.skytasul.quests.utils.compatibility.DependenciesManager;
-import fr.skytasul.quests.utils.compatibility.Dynmap;
 import fr.skytasul.quests.utils.compatibility.mobs.BukkitEntityFactory;
 import fr.skytasul.quests.utils.compatibility.mobs.CitizensFactory;
 import fr.skytasul.quests.utils.nms.NMS;
@@ -279,13 +278,13 @@ public class BeautyQuests extends JavaPlugin{
 	
 	private YamlConfiguration loadLang() throws LoadingException {
 		try {
-			for (String language : new String[] { "en_US", "fr_FR", "zh_CN", "zh_HK", "de_DE", "pt_PT", "it_IT", "es_ES", "sv_SE", "hu_HU", "ru_RU", "pl_PL" }) {
+			for (String language : new String[] { "en_US", "nl_NL" }) {
 				File file = new File(getDataFolder(), "locales/" + language + ".yml");
 				if (!file.exists()) saveResource("locales/" + language + ".yml", false);
 			}
 
 			long lastMillis = System.currentTimeMillis();
-			loadedLanguage = config.getString("lang", "en_US");
+			loadedLanguage = config.getString("lang", "nl_NL");
 			String language = "locales/" + loadedLanguage + ".yml";
 			File file = new File(getDataFolder(), language);
 			InputStream res = getResource(language);
@@ -350,15 +349,6 @@ public class BeautyQuests extends JavaPlugin{
 		File scFile = new File(getDataFolder(), "scoreboard.yml");
 		if (!scFile.exists()) saveResource("scoreboard.yml", true);
 		scoreboards = new ScoreboardManager(YamlConfiguration.loadConfiguration(scFile));
-		if (DependenciesManager.dyn){
-			try{
-				Dynmap.intitialize();
-			}catch (Throwable ex){
-				getLogger().severe("An error occured while initializing dynmap integration.");
-				ex.printStackTrace();
-				Dynmap.unload();
-			}
-		}
 		
 		quests.clear();
 		lastID = data.getInt("lastID");
@@ -439,7 +429,6 @@ public class BeautyQuests extends JavaPlugin{
 		npcs.clear();
 		if (db != null) db.closeConnection();
 		//HandlerList.unregisterAll(this);
-		if (DependenciesManager.dyn) Dynmap.unload();
 	}
 	
 	/* ---------- Backups ---------- */

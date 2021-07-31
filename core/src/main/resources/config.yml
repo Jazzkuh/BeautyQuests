@@ -2,7 +2,7 @@
 # Number of minutes before the quest can be redone
 redoMinuts: 5
 # Chosen lang (file name) Available by default: fr_FR, en_US, zh_CN, zh_HK, de_DE, it_IT, es_ES, pt_PT, sv_SE, hu_HU, ru_RU, pl_PL
-lang: en_US
+lang: nl_NL
 # (1.13 and above) Minecraft vanilla translations (JSON file name). Some can be found on SkytAsul's Discord server
 minecraftTranslationsFile: null
 # Enable or disable update checking on the loading
@@ -29,7 +29,7 @@ database:
 
 # - Quests behaviors -
 # Enable or disable the scoreboards - more options in scoreboard.yml
-scoreboards: true
+scoreboards: false
 # Enable or disable message when a quest is updated (next stage)
 playerQuestUpdateMessage: true
 # Enable or disable default messages when a stage starts
@@ -37,15 +37,15 @@ playerStageStartMessage: true
 # Allows player to cancel quests they have started with the GUI
 allowPlayerCancelQuest: true
 # Shows a Yes/No GUI to let the player choose if he wants to accept the quest or not
-questConfirmGUI: false
+questConfirmGUI: true
 # Dialogs are shown in the action bar instead of the chat
 dialogsInActionBar: false
 # Default time between two dialogs lines (in ticks: 1s = 20 ticks). 0 to disable.
-dialogsDefaultTime: 100
+dialogsDefaultTime: 20
 # If enabled, players will not be allowed to click on the NPC to pass a line of dialog
-disableDialogClick: false
+disableDialogClick: true
 # Enable of disable playing sounds on various actions
-sounds: true
+sounds: false
 # Sound played at the end of a quest
 finishSound: ENTITY_PLAYER_LEVELUP
 # Enable or disable end fireworks
@@ -77,7 +77,7 @@ splittedAdvancementPlaceholderMax: 3
 # (HolographicDisplays) Disable the hologram above NPC's head
 disableTextHologram: false
 # (HolographicDisplays) Value added to the hologram height (decimal value)
-hologramsHeight: 0.0
+hologramsHeight: 0.02
 # (HolographicDisplays) Material name of the hologram showed above head of Quests starter. If ProtocolLib is enabled, holograms will be visible only by players who can start the quest
 holoLaunchItemName: BOOK
 # (HolographicDisplays) Material name of the hologram showed above head of Stage NPC. If ProtocolLib is enabled, holograms will be visible only by players who has to talk with this NPC
@@ -92,16 +92,16 @@ dynmap:
 
 # - Stage descriptions -
 # {0} = stage index, {1} = stage amount, {2} = stage description}
-stageDescriptionFormat: "§8({0}/{1}) §e{2}"
+stageDescriptionFormat: "{2}"
 # Prefix before object's name in lists (example: §6first, §6second and §6third)
-itemNameColor: "§6§o"
+itemNameColor: "§6"
 # Prefix before object's amount in lists (example: first§ex2, second§ex7 and third§ex4)
-itemAmountColor: "§e"
+itemAmountColor: "§7"
 stageDescriptionItemsSplit:
   # Prefix before each line
-  prefix: "§e- §6"
+  prefix: "§7- "
   # Format of object amounts. Placeholders: {0} = remaining (decreasing), {1} = done (increasing), {2} = total. Example: "{1}/{2}"
-  amountFormat: "x{0}"
+  amountFormat: "({0} over)"
   # Show amount format if there is only one object remaining
   showXOne: true
   # When there is only one object, do not put it on a new line
@@ -119,12 +119,12 @@ stageDescriptionItemsSplit:
 # Particles shown on a NPC when the player can start the quest
 start:
   enabled: true
-  particleEffect: redstone
+  particleEffect: villager_happy
   particleColor:
     RED: 255
     BLUE: 0
     GREEN: 255
-  particleShape: point
+  particleShape: near
 # Particles shown on the NPC to which the player has to talk
 talk:
   enabled: true
@@ -133,13 +133,13 @@ talk:
     RED: 255
     BLUE: 0
     GREEN: 255
-  particleShape: bar
+  particleShape: near
 # Particles shown when the player finish a stage of a quest
 next:
-  enabled: true
+  enabled: false
   particleEffect: smoke_normal
   particleColor:
     RED: 255
     BLUE: 0
     GREEN: 255
-  particleShape: spot
+  particleShape: near

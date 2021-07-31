@@ -53,7 +53,6 @@ import fr.skytasul.quests.utils.Lang;
 import fr.skytasul.quests.utils.Utils;
 import fr.skytasul.quests.utils.XMaterial;
 import fr.skytasul.quests.utils.compatibility.DependenciesManager;
-import fr.skytasul.quests.utils.compatibility.Dynmap;
 
 public class Quest implements Comparable<Quest> {
 	
@@ -78,7 +77,6 @@ public class Quest implements Comparable<Quest> {
 	}
 	
 	public void create() {
-		if (DependenciesManager.dyn) Dynmap.addMarker(this);
 	}
 	
 	void updateLauncheable(LivingEntity en) {
@@ -340,7 +338,6 @@ public class Quest implements Comparable<Quest> {
 	
 	public void unloadAll(){
 		manager.remove();
-		if (DependenciesManager.dyn) Dynmap.removeMarker(this);
 		options.forEach(QuestOption::detach);
 	}
 
