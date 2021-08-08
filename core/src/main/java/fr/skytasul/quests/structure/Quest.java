@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.LivingEntity;
@@ -266,7 +267,7 @@ public class Quest implements Comparable<Quest> {
 		}else start(p);
 	}
 	
-	public void start(Player p){
+	public void start(Player p) {
 		PlayerAccount acc = PlayersManager.getPlayerAccount(p);
 		if (hasStarted(acc)){
 			Lang.ALREADY_STARTED.send(p);
@@ -286,6 +287,7 @@ public class Quest implements Comparable<Quest> {
 				getOptionValueOrDef(OptionRequirements.class).stream().filter(Actionnable.class::isInstance).map(Actionnable.class::cast).forEach(x -> x.trigger(p));
 				if (!msg.isEmpty()) Utils.sendMessage(p, Lang.FINISHED_OBTAIN.format(Utils.itemsToFormattedString(msg.toArray(new String[0]))));
 				manager.startPlayer(acc);
+				p.sendTitle(ChatColor.GOLD + "Quest Geaccepteerd", ChatColor.GRAY + Quest.this.getName(), 10, 40, 10);
 
 				Utils.runOrSync(() -> Bukkit.getPluginManager().callEvent(new QuestLaunchEvent(p, Quest.this)));
 			}
@@ -317,6 +319,7 @@ public class Quest implements Comparable<Quest> {
 				}
 				Utils.spawnFirework(p.getLocation());
 				Utils.playPluginSound(p, QuestsConfiguration.getFinishSound(), 1);
+				p.sendTitle(ChatColor.GOLD + "Quest Voltooid", ChatColor.GRAY + Quest.this.getName(), 10, 40, 10);
 				
 				QuestFinishEvent event = new QuestFinishEvent(p, Quest.this);
 				Utils.runOrSync(() -> Bukkit.getPluginManager().callEvent(event));

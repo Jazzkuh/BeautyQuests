@@ -1,12 +1,12 @@
 msg:
   quest:
     finished:
-      base: §7Je hebt de quest §d{0}§7 voltooid.
-      obtain: §7Je hebt §d{0} §7ontvangen.
-    started: §7Je hebt de quest §r§d{0}§7 gestart.
-    created: §7Congratulations! You have created the quest §d{0}§7 which includes
+      base: §eJe hebt de quest §6{0}§e voltooid.
+      obtain: §eJe hebt §6{0} §eontvangen.
+    started: §eJe hebt de quest §r§6{0}§e gestart.
+    created: §eCongratulations! You have created the quest §6{0}§e which includes
       {1} branch(es)!
-    edited: §7Congratulations! You have edited the quest §d{0}§7 which includes now
+    edited: §eCongratulations! You have edited the quest §6{0}§e which includes now
       {1} branch(es)!
     createCancelled: §cThe creation or edition has been cancelled by another plugin!
     cancelling: §cProcess of quest creation cancelled.
@@ -15,57 +15,57 @@ msg:
     alreadyStarted: §cJe hebt deze quest al gestart.
   quests:
     nopStep: §cDeze quest heeft geen objectieven.
-    updated: §7De quest §d{0}§7 is geupdate.
-    checkpoint: §7Checkpoint behaald!
+    updated: §eDe quest §6{0}§e is geupdate.
+    checkpoint: §eCheckpoint behaald!
     failed: §cJe hebt de quest {0} gefaald.
   questItem:
     drop: §cJe kan een quest item niet droppen.
     craft: §cYou can't use a quest item to craft!
   stageMobs:
     noMobs: §cThis stage doesn't need any mobs to kill.
-    listMobs: §7Vermoord {0}.
-  writeNPCText: '§7Write the dialog that will be said to the player by the NPC: (Write
+    listMobs: §eVermoord {0}.
+  writeNPCText: '§eWrite the dialog that will be said to the player by the NPC: (Write
     "help" to receive help.)'
-  writeRegionName: '§7Write the name of the region required for the step:'
-  writeXPGain: '§7Write the amount of experience points the player will obtain: (Last
+  writeRegionName: '§eWrite the name of the region required for the step:'
+  writeXPGain: '§eWrite the amount of experience points the player will obtain: (Last
     value: {0})'
-  writeMobAmount: '§7Write the amount of mobs to kill:'
-  writeChatMessage: '§7Write required message: (Add "{SLASH}" to the beginning if
+  writeMobAmount: '§eWrite the amount of mobs to kill:'
+  writeChatMessage: '§eWrite required message: (Add "{SLASH}" to the beginning if
     you want a command.)'
-  writeEndMessage: '§7Write the message that will be sent at the end of the quest
+  writeEndMessage: '§eWrite the message that will be sent at the end of the quest
     or the stage:'
-  writeDescriptionText: '§7Write the text which describes the goal of the stage:'
-  writeStageText: '§7Write the text that will be sent to the player at the beginning
+  writeDescriptionText: '§eWrite the text which describes the goal of the stage:'
+  writeStageText: '§eWrite the text that will be sent to the player at the beginning
     of the step:'
-  moveToTeleportPoint: §7Go to the wanted teleport location.
-  writeNpcName: '§7Write the name of the NPC:'
-  writeNpcSkinName: '§7Write the name of the skin of the NPC:'
-  writeQuestName: '§7Write the name of your quest:'
-  writeCommand: '§7Write the wanted command: (The command is without the "/" and the
+  moveToTeleportPoint: §eGo to the wanted teleport location.
+  writeNpcName: '§eWrite the name of the NPC:'
+  writeNpcSkinName: '§eWrite the name of the skin of the NPC:'
+  writeQuestName: '§eWrite the name of your quest:'
+  writeCommand: '§eWrite the wanted command: (The command is without the "/" and the
     placeholder "{PLAYER}" is supported. It will be replaced with the name of the
     executor.)'
-  writeHologramText: '§7Write text of the hologram: (Write "none" if you don''t want
+  writeHologramText: '§eWrite text of the hologram: (Write "none" if you don''t want
     a hologram and "null" if you want the default text.)'
-  writeQuestTimer: '§7Write the required time (in minutes) before you can restart
+  writeQuestTimer: '§eWrite the required time (in minutes) before you can restart
     the quest: (Write "null" if you want the default timer.)'
-  writeConfirmMessage: '§7Write the confirmation message shown when a player is about
+  writeConfirmMessage: '§eWrite the confirmation message shown when a player is about
     to start the quest: (Write "null" if you want the default message.)'
-  writeQuestDescription: '§7Write the description of the quest, shown in the player''s quest GUI.'
-  writeQuestMaterial: '§7Write the material of the quest item.'
+  writeQuestDescription: '§eWrite the description of the quest, shown in the player''s quest GUI.'
+  writeQuestMaterial: '§eWrite the material of the quest item.'
   requirements:
-    quest: §cYou must have finished the quest §d{0}§c!
+    quest: §cYou must have finished the quest §6{0}§c!
     level: §cYour level must be {0}!
-    job: §cYour level for the job §d{1}§c must be {0}!
-    skill: §cYour level for the skill §d{1}§c must be {0}!
+    job: §cYour level for the job §6{1}§c must be {0}!
+    skill: §cYour level for the skill §6{1}§c must be {0}!
     combatLevel: §cYour combat level must be {0}!
     money: §cYou must have {0}!
     wait: §cYou must wait {0} minute(s) before you can restart this quest!
   experience:
-    edited: §7You have changed the experience gain from {0} to {1} points.
-  selectNPCToKill: §7Select the NPC to kill.
+    edited: §eYou have changed the experience gain from {0} to {1} points.
+  selectNPCToKill: §eSelect the NPC to kill.
   npc:
-    remove: §7NPC deleted.
-    talk: §7Go and talk to the NPC named §d{0}§7.
+    remove: §eNPC deleted.
+    talk: §eGo and talk to the NPC named §6{0}§e.
   regionDoesntExists: §cThis region doesn't exist. (You have to be in the same world.)
   npcDoesntExist: §cThe NPC with the id {0} doesn't exist.
   objectDoesntExist: §cThe specified item with the id {0} doesn't exist.
@@ -78,7 +78,7 @@ msg:
   indexOutOfBounds: §cThe number {0} is out of bounds! It has to be between {1} and
     {2}.
   invalidBlockData: §cThe blockdata {0} is invalid or incompatible with the block {1}.
-  bringBackObjects: §7Breng mij {0}§7.
+  bringBackObjects: §eBreng mij {0}§e.
   inventoryFull: §cYour inventory is full, the item has been dropped on the floor.
   playerNeverConnected: §cUnable to find informations about the player {0}.
   playerNotOnline: §cThe player {0} is offline.
@@ -89,115 +89,115 @@ msg:
     setStage:
       branchDoesntExist: §cThe branch with the id {0} doesn't exist.
       doesntExist: §cThe stage with the id {0} doesn't exist.
-      next: §7The stage has been skipped.
+      next: §eThe stage has been skipped.
       nextUnavailable: §cThe "skip" option is not available when the player is at
         the end of a branch.
-      set: §7Stage {0} launched.
+      set: §eStage {0} launched.
     playerNeeded: §cYou must be a player to execute this command!
     incorrectSyntax: §cIncorrect syntax.
     noPermission: '§cYou haven''t enough permissions to execute this command! (Required:
       {0})'
     invalidCommand:
-      quests: §cThis command doesn't exist, write §d/quests help§c.
-      simple: §cThis command doesn't exist, write §dhelp§c.
+      quests: §cThis command doesn't exist, write §6/quests help§c.
+      simple: §cThis command doesn't exist, write §6help§c.
     needItem: §cYou must hold an item in your main hand!
-    itemChanged: §7The item has been edited. The changes will affect after a restart.
-    itemRemoved: §7The hologram item has been removed.
-    removed: §7The quest {0} has successfully been removed.
-    leaveAll: '§7You have forced the end of {0} quest(s). Errors: {1}'
+    itemChanged: §eThe item has been edited. The changes will affect after a restart.
+    itemRemoved: §eThe hologram item has been removed.
+    removed: §eThe quest {0} has successfully been removed.
+    leaveAll: '§eYou have forced the end of {0} quest(s). Errors: {1}'
     resetPlayer:
-      player: §7All informations of your {0} quest(s) has/have been deleted by {1}.
-      remover: §7{0} quest information(s) of {1} has/have been deleted.
+      player: §eAll informations of your {0} quest(s) has/have been deleted by {1}.
+      remover: §e{0} quest information(s) of {1} has/have been deleted.
     resetPlayerQuest:
-      player: §7All informations about the quest {0} have been deleted by {1}.
-      remover: §7{0} quest information(s) of {1} has/have been deleted.
-    resetQuest: §7Removed datas of the quest for {0} players.
-    startQuest: '§7You have forced starting of quest {0} (Player UUID: {1}).'
-    cancelQuest: §7You have cancelled the quest {0}.
+      player: §eAll informations about the quest {0} have been deleted by {1}.
+      remover: §e{0} quest information(s) of {1} has/have been deleted.
+    resetQuest: §eRemoved datas of the quest for {0} players.
+    startQuest: '§eYou have forced starting of quest {0} (Player UUID: {1}).'
+    cancelQuest: §eYou have cancelled the quest {0}.
     cancelQuestUnavailable: §cThe quest {0} can't be cancelled.
-    backupCreated: §7You have successfully created backups of all quests and player
+    backupCreated: §eYou have successfully created backups of all quests and player
       informations.
     backupPlayersFailed: §cCreating a backup for all the player informations has failed.
     backupQuestsFailed: §cCreating a backup for all the quests has failed.
-    adminModeEntered: §7You have entered the Admin Mode.
-    adminModeLeft: §7You have left the Admin Mode.
+    adminModeEntered: §eYou have entered the Admin Mode.
+    adminModeLeft: §eYou have left the Admin Mode.
     scoreboard:
-      lineSet: §7You have successfully edited the line {0}.
-      lineReset: §7You have successfully reset the line {0}.
-      lineRemoved: §7You have successfully removed the line {0}.
+      lineSet: §eYou have successfully edited the line {0}.
+      lineReset: §eYou have successfully reset the line {0}.
+      lineRemoved: §eYou have successfully removed the line {0}.
       lineInexistant: §cThe line {0} doesn't exist.
-      resetAll: §7You have successfully reset the scoreboard of the player {0}.
-      hidden: §7The scoreboard of the player {0} has been hidden.
-      shown: §7The scoreboard of the player {0} has been shown.
+      resetAll: §eYou have successfully reset the scoreboard of the player {0}.
+      hidden: §eThe scoreboard of the player {0} has been hidden.
+      shown: §eThe scoreboard of the player {0} has been shown.
     help:
-      header: §7BeautyQuests — Help
-      create: '§7/{0} create: §dCreate a quest.'
-      edit: '§7/{0} edit: §dEdit a quest.'
-      remove: '§7/{0} remove <id>: §dDelete a quest with a specified id or click on
+      header: §eBeautyQuests — Help
+      create: '§e/{0} create: §6Create a quest.'
+      edit: '§e/{0} edit: §6Edit a quest.'
+      remove: '§e/{0} remove <id>: §6Delete a quest with a specified id or click on
         the NPC when not defined.'
-      finishAll: '§7/{0} finishAll <player>: §dFinish all quests of a player.'
-      setStage: '§7/{0} setStage <player> <id> [new branch] [new stage]: §dSkip the
+      finishAll: '§e/{0} finishAll <player>: §6Finish all quests of a player.'
+      setStage: '§e/{0} setStage <player> <id> [new branch] [new stage]: §6Skip the
         current stage/start the branch/set a stage for a branch.'
-      resetPlayer: '§7/{0} resetPlayer <player>: §dRemove all informations about a
+      resetPlayer: '§e/{0} resetPlayer <player>: §6Remove all informations about a
         player.'
-      resetPlayerQuest: '§7/{0} resetPlayerQuest <player> [id]: §dDelete informations
+      resetPlayerQuest: '§e/{0} resetPlayerQuest <player> [id]: §6Delete informations
         of a quest for a player.'
-      seePlayer: '§7/{0} seePlayer <player>: §dView informations about a player.'
-      reload: '§7/{0} reload: §dSave and reload all configurations and files. (§cdeprecated§d)'
-      start: '§7/{0} start <player> [id]: §dForce the starting of a quest.'
-      setItem: '§7/{0} setItem <talk|launch>: §dSave the hologram item.'
-      adminMode: '§7/{0} adminMode: §dToggle the Admin Mode. (Useful for displaying
+      seePlayer: '§e/{0} seePlayer <player>: §6View informations about a player.'
+      reload: '§e/{0} reload: §6Save and reload all configurations and files. (§cdeprecated§6)'
+      start: '§e/{0} start <player> [id]: §6Force the starting of a quest.'
+      setItem: '§e/{0} setItem <talk|launch>: §6Save the hologram item.'
+      adminMode: '§e/{0} adminMode: §6Toggle the Admin Mode. (Useful for displaying
         little log messages.)'
-      version: '§7/{0} version: §dSee the current plugin version.'
-      save: '§7/{0} save: §dMake a manual plugin save.'
-      list: '§7/{0} list: §dSee the quest list. (Only for supported versions.)'
-  typeCancel: §7Write "cancel" to come back to the last text.
+      version: '§e/{0} version: §6See the current plugin version.'
+      save: '§e/{0} save: §6Make a manual plugin save.'
+      list: '§e/{0} list: §6See the quest list. (Only for supported versions.)'
+  typeCancel: §eWrite "cancel" to come back to the last text.
   editor:
-    blockAmount: '§7Write the amount of blocks:'
-    blockName: '§7Write the name of the block:'
-    blockData: '§7Write the blockdata (available blockdatas: {0}):'
-    typeBucketAmount: '§7Write the amount of buckets to fill:'
-    goToLocation: §7Go to the wanted location for the stage.
-    typeLocationRadius: '§7Write the required distance from the location:'
-    typeGameTicks: '§7Write the required game ticks:'
+    blockAmount: '§eWrite the amount of blocks:'
+    blockName: '§eWrite the name of the block:'
+    blockData: '§eWrite the blockdata (available blockdatas: {0}):'
+    typeBucketAmount: '§eWrite the amount of buckets to fill:'
+    goToLocation: §eGo to the wanted location for the stage.
+    typeLocationRadius: '§eWrite the required distance from the location:'
+    typeGameTicks: '§eWrite the required game ticks:'
     already: §cYou are already in the editor.
     enter:
-      title: §7~ Editor Mode ~
-      subtitle: §7Write "/quests editor" to force leaving.
-    chat: §7You are currently in the Editor Mode. Write "/quests editor" to force
+      title: §e~ Editor Mode ~
+      subtitle: §eWrite "/quests editor" to force leaving.
+    chat: §eYou are currently in the Editor Mode. Write "/quests editor" to force
       leaving the editor. (Highly not recommended, consider using commands such as
       "close" or "cancel" to come back to the previous inventory.)
     npc:
-      enter: §7Click on a NPC, or write "cancel".
-      choseStarter: §7Choose the NPC which starts the quest.
+      enter: §eClick on a NPC, or write "cancel".
+      choseStarter: §eChoose the NPC which starts the quest.
       notStarter: §cThis NPC isn't a quest starter.
     text:
       argNotSupported: §cThe argument {0} not supported.
-      chooseLvlRequired: '§7Write the required amount of levels:'
-      chooseJobRequired: '§7Write name of the wanted job:'
-      choosePermissionRequired: '§7Write the required permission to start the quest:'
-      choosePermissionMessage: §7You can choose a rejection message if the player
+      chooseLvlRequired: '§eWrite the required amount of levels:'
+      chooseJobRequired: '§eWrite name of the wanted job:'
+      choosePermissionRequired: '§eWrite the required permission to start the quest:'
+      choosePermissionMessage: §eYou can choose a rejection message if the player
         doesn't have the required permission. (To skip this step, write "null".)
       choosePlaceholderRequired:
-        identifier: '§7Write the name of the required placeholder without the percent
+        identifier: '§eWrite the name of the required placeholder without the percent
           characters:'
-        value: '§7Write the required value for the placeholder §d%§d{0}§d%§7:'
-      chooseSkillRequired: '§7Write the name of the required skill:'
-      chooseMoneyRequired: '§7Write the amount of required money:'
+        value: '§eWrite the required value for the placeholder §6%§6{0}§6%§e:'
+      chooseSkillRequired: '§eWrite the name of the required skill:'
+      chooseMoneyRequired: '§eWrite the amount of required money:'
       reward:
-        permissionName: §7Write the permission name.
-        permissionWorld: §7Write the world in which the permission will be edited,
+        permissionName: §eWrite the permission name.
+        permissionWorld: §eWrite the world in which the permission will be edited,
           or "null" if you want to be global.
-        money: '§7Write the amount of the received money:'
-      chooseObjectiveRequired: §7Write the objective name.
-      chooseObjectiveTargetScore: §7Write the target score for the objective.
-      chooseRegionRequired: §7Write the name of the required region (you must be in the same world).
-    selectWantedBlock: §7Click with the stick on the wanted block for the stage.
+        money: '§eWrite the amount of the received money:'
+      chooseObjectiveRequired: §eWrite the objective name.
+      chooseObjectiveTargetScore: §eWrite the target score for the objective.
+      chooseRegionRequired: §eWrite the name of the required region (you must be in the same world).
+    selectWantedBlock: §eClick with the stick on the wanted block for the stage.
     itemCreator:
-      itemType: '§7Write the name of the wanted item type:'
-      itemAmount: '§7Write the amount of item(s):'
-      itemName: '§7Write the item name:'
-      itemLore: '§7Modify the item lore: (Write "help" for help.)'
+      itemType: '§eWrite the name of the wanted item type:'
+      itemAmount: '§eWrite the amount of item(s):'
+      itemName: '§eWrite the item name:'
+      itemLore: '§eModify the item lore: (Write "help" for help.)'
       unknownItemType: §cUnknown item type.
       invalidItemType: §cInvalid item type. (The item can't be a block.)
       unknownBlockType: §cUnknown block type.
@@ -205,124 +205,124 @@ msg:
     dialog:
       syntax: '§cCorrect syntax: {0}{1} <message>'
       syntaxRemove: '§cCorrect sytax: remove <id>'
-      player: §7Message "{0}" added for the player.
-      npc: §7Message "{0}" added for the NPC.
-      noSender: §7Message "{0}" added without a sender.
-      messageRemoved: §7Message "{0}" removed.
-      edited: §7Message "{0}" edited.
-      soundAdded: §7Sound "{0}" added for the message "{1}".
-      cleared: §7{0} removed message(s).
+      player: §eMessage "{0}" added for the player.
+      npc: §eMessage "{0}" added for the NPC.
+      noSender: §eMessage "{0}" added without a sender.
+      messageRemoved: §eMessage "{0}" removed.
+      edited: §eMessage "{0}" edited.
+      soundAdded: §eSound "{0}" added for the message "{1}".
+      cleared: §e{0} removed message(s).
       help:
-        header: §7BeautyQuests — Dialog editor help
-        npc: '§7npc <message>: §dAdd a message said by the NPC.'
-        player: '§7player <message>: §dAdd a message said by the player.'
-        nothing: '§7noSender <message>: §dAdd a message without a sender.'
-        remove: '§7remove <id>: §dRemove a message.'
-        list: '§7list: §dView all messages.'
-        npcInsert: '§7npcInsert <id> <message>: §dInsert a message said by the NPC.'
-        playerInsert: '§7playerInsert <id> <message>: §dInsert a message said by player.'
-        nothingInsert: '§7nothingInsert <id> <message>: §dInsert a message without
+        header: §eBeautyQuests — Dialog editor help
+        npc: '§enpc <message>: §6Add a message said by the NPC.'
+        player: '§eplayer <message>: §6Add a message said by the player.'
+        nothing: '§enoSender <message>: §6Add a message without a sender.'
+        remove: '§eremove <id>: §6Remove a message.'
+        list: '§elist: §6View all messages.'
+        npcInsert: '§enpcInsert <id> <message>: §6Insert a message said by the NPC.'
+        playerInsert: '§eplayerInsert <id> <message>: §6Insert a message said by player.'
+        nothingInsert: '§enothingInsert <id> <message>: §6Insert a message without
           any prefix.'
-        edit: '§7edit <id> <message>: §dEdit a message.'
-        addSound: '§7addSound <id> <sound>: §dAdd a sound to a message.'
-        clear: '§7clear: §dRemove all messages.'
-        close: '§7close: §dValidate all messages.'
-        setTime: '§7setTime <id> <time>: §dSet the time (in ticks) before the next msg plays automatically.'
-      timeSet: '§7Time has been edited for message {0}: now {1} ticks.'
-      timeRemoved: '§7Time has been removed for message {0}.'
+        edit: '§eedit <id> <message>: §6Edit a message.'
+        addSound: '§eaddSound <id> <sound>: §6Add a sound to a message.'
+        clear: '§eclear: §6Remove all messages.'
+        close: '§eclose: §6Validate all messages.'
+        setTime: '§esetTime <id> <time>: §6Set the time (in ticks) before the next msg plays automatically.'
+      timeSet: '§eTime has been edited for message {0}: now {1} ticks.'
+      timeRemoved: '§eTime has been removed for message {0}.'
     mythicmobs:
-      list: '§7A list of all Mythic Mobs:'
+      list: '§eA list of all Mythic Mobs:'
       isntMythicMob: §cThis Mythic Mob doesn't exist.
       disabled: §cMythicMob is disabled.
     epicBossDoesntExist: §cThis Epic Boss doesn't exist.
     textList:
       syntax: '§cCorrect syntax: '
-      added: §7Text "{0}" added.
-      removed: §7Text "{0}" removed.
+      added: §eText "{0}" added.
+      removed: §eText "{0}" removed.
       help:
-        header: §7BeautyQuests — List editor help
-        add: '§7add <message>: §dAdd a text.'
-        remove: '§7remove <id>: §dRemove a text.'
-        list: '§7list: §dView all added texts.'
-        close: '§7close: §dValidate the added texts.'
-    noSuchElement: '§cThere is no such element. Allowed elements are: §d{0}'
-    comparisonType: '§7Choose the comparison type you want among {0}. Default comparison is: §dgreater or equals§r§7. Type null§r§7 to use it.'
+        header: §eBeautyQuests — List editor help
+        add: '§eadd <message>: §6Add a text.'
+        remove: '§eremove <id>: §6Remove a text.'
+        list: '§elist: §6View all added texts.'
+        close: '§eclose: §6Validate the added texts.'
+    noSuchElement: '§cThere is no such element. Allowed elements are: §6{0}'
+    comparisonType: '§eChoose the comparison type you want among {0}. Default comparison is: §6greater or equals§r§e. Type null§r§e to use it.'
     scoreboardObjectiveNotFound: '§cUnknown scoreboard objective.'
-  writeCommandDelay: '§7Write the desired command delay, in ticks.'
+  writeCommandDelay: '§eWrite the desired command delay, in ticks.'
 advancement:
   finished: Finished
   notStarted: Not started
 inv:
   validate: §bValidate
   cancel: §cCancel
-  search: §dSearch
-  addObject: §7Add an object
+  search: §6Search
+  addObject: §eAdd an object
   confirm:
     name: Weet je het zeker?
     'yes': §aJa
     'no': §cNee
   create:
-    stageCreate: §7Create new step
+    stageCreate: §eCreate new step
     stageRemove: §cDelete this step
-    findNPC: §7Find NPC
-    bringBack: §7Bring back items
-    findRegion: §7Find region
-    killMobs: §7Kill mobs
-    mineBlocks: §7Break blocks
-    placeBlocks: §7Place blocks
-    talkChat: §7Write in chat
-    interact: §7Interact with block
-    fish: §7Catch fishes
-    craft: §7Craft item
-    bucket: §7Fill buckets
-    location: §7Go to location
-    playTime: §dPlay time
-    NPCText: §dEdit dialog
-    NPCSelect: §dChoose or create NPC
+    findNPC: §eFind NPC
+    bringBack: §eBring back items
+    findRegion: §eFind region
+    killMobs: §eKill mobs
+    mineBlocks: §eBreak blocks
+    placeBlocks: §ePlace blocks
+    talkChat: §eWrite in chat
+    interact: §eInteract with block
+    fish: §eCatch fishes
+    craft: §eCraft item
+    bucket: §eFill buckets
+    location: §eGo to location
+    playTime: §6Play time
+    NPCText: §6Edit dialog
+    NPCSelect: §6Choose or create NPC
     hideClues: Hide particles and holograms
-    editMobsKill: §dEdit mobs to kill
+    editMobsKill: §6Edit mobs to kill
     mobsKillFromAFar: Needs to be killed with projectile
-    editBlocksMine: §dEdit blocks to break
+    editBlocksMine: §6Edit blocks to break
     preventBlockPlace: Prevent players to break their own blocks
-    editBlocksPlace: §dEdit blocks to place
-    editMessageType: §dEdit message to write
+    editBlocksPlace: §6Edit blocks to place
+    editMessageType: §6Edit message to write
     cancelMessage: Cancel sending
     ignoreCase: Ignore the case of the message
-    selectItems: §dEdit required items
-    selectRegion: §7Choose region
+    selectItems: §6Edit required items
+    selectRegion: §eChoose region
     toggleRegionExit: On exit
-    stageStartMsg: §dEdit starting message
-    selectBlockLocation: §dSelect block location
-    selectBlockMaterial: §dSelect block material
+    stageStartMsg: §6Edit starting message
+    selectBlockLocation: §6Select block location
+    selectBlockMaterial: §6Select block material
     leftClick: Click must be left-click
-    editFishes: §dEdit fishes to catch
-    editItem: §dEdit item to craft
-    editBucketType: §dEdit type of bucket to fill
-    editBucketAmount: §dEdit amount of buckets to fill
-    editLocation: §dEdit location
-    editRadius: §dEdit distance from location
-    currentRadius: '§dCurrent distance: §7{0}'
-    changeTicksRequired: '§dChange played ticks required'
+    editFishes: §6Edit fishes to catch
+    editItem: §6Edit item to craft
+    editBucketType: §6Edit type of bucket to fill
+    editBucketAmount: §6Edit amount of buckets to fill
+    editLocation: §6Edit location
+    editRadius: §6Edit distance from location
+    currentRadius: '§6Current distance: §e{0}'
+    changeTicksRequired: '§6Change played ticks required'
   stages:
     name: Create stages
-    nextPage: §dNext page
-    laterPage: §dPrevious page
-    endingItem: §dEdit end rewards
-    descriptionTextItem: §dEdit description
-    regularPage: §7Regular stages
-    branchesPage: §dBranch stages
-    previousBranch: §dBack to previous branch
-    newBranch: §dGo to new branch
-    validationRequirements: §dValidation requirements
+    nextPage: §6Next page
+    laterPage: §6Previous page
+    endingItem: §6Edit end rewards
+    descriptionTextItem: §6Edit description
+    regularPage: §eRegular stages
+    branchesPage: §6Branch stages
+    previousBranch: §6Back to previous branch
+    newBranch: §6Go to new branch
+    validationRequirements: §6Validation requirements
     validationRequirementsLore: All the requirements must match the player that tries to complete the stage. If not, the stage can not be completed.
   details:
-    hologramLaunch: §dEdit "launch" hologram item
+    hologramLaunch: §6Edit "launch" hologram item
     hologramLaunchLore: Hologram displayed above Starter NPC's head when the player can start the quest.
-    hologramLaunchNo: §dEdit "launch unavailable" hologram item
+    hologramLaunchNo: §6Edit "launch unavailable" hologram item
     hologramLaunchNoLore: Hologram displayed above Starter NPC's head when the player can NOT start the quest.
-    customConfirmMessage: §dEdit quest confirmation message
+    customConfirmMessage: §6Edit quest confirmation message
     customConfirmMessageLore: Message displayed in the Confirmation GUI when a player is about to start the quest.
-    customDescription: §dEdit quest description
+    customDescription: §6Edit quest description
     customDescriptionLore: Description shown below the name of the quest in GUIs.
     name: Last quest details
     multipleTime:
@@ -338,27 +338,27 @@ inv:
     hideItemLore: If enabled, the quest will not be displayed on the dynmap nor in the Quests Menu.
     bypassLimit: Don't count quest limit
     bypassLimitLore: If enabled, the quest will be startable even if the player has reached its maximum amount of started quests.
-    questName: §7Edit quest name
+    questName: §eEdit quest name
     questNameLore: A name must be set to complete quest creation.
-    setItemsRewards: §dEdit reward items
-    setXPRewards: §dEdit reward experience
-    setCheckpointReward: §dEdit checkpoint rewards
-    setPermReward: §dEdit permissions
-    setMoneyReward: §dEdit money reward
-    selectStarterNPC: §dSelect NPC starter
+    setItemsRewards: §6Edit reward items
+    setXPRewards: §6Edit reward experience
+    setCheckpointReward: §6Edit checkpoint rewards
+    setPermReward: §6Edit permissions
+    setMoneyReward: §6Edit money reward
+    selectStarterNPC: §6Select NPC starter
     selectStarterNPCLore: Clicking on the selected NPC will start the quest.
     createQuestName: Create quest
     createQuestLore: You must define a quest name.
     editQuestName: Edit quest
-    endMessage: §dEdit end message
+    endMessage: §6Edit end message
     endMessageLore: Message which will be sent to the player at the end of the quest.
-    startDialog: §dEdit start dialog
+    startDialog: §6Edit start dialog
     startDialogLore: Dialog which will be played before the quests start when players click on the Starter NPC.
-    editRequirements: §dEdit requirements
+    editRequirements: §6Edit requirements
     editRequirementsLore: Every requirements must apply to the player before it can start the quest.
-    startRewards: §7Start rewards
+    startRewards: §eStart rewards
     startRewardsLore: Actions performed when the quest starts.
-    hologramText: §dHologram text
+    hologramText: §6Hologram text
     hologramTextLore: Text displayed on the hologram above the Starter NPC's head.
     timer: §bRestart timer
     timerLore: Time before the player can start the quest again.
@@ -366,7 +366,7 @@ inv:
     rewards: '{0} reward(s)'
     actions: '{0} action(s)'
     rewardsLore: Actions performed when the quest ends.
-    customMaterial: '§dEdit quest item material'
+    customMaterial: '§6Edit quest item material'
     customMaterialLore: Item representative of this quest in the Quests Menu.
     failOnDeath: Fail on death
     failOnDeathLore: Will the quest be cancelled when the player dies?
@@ -374,55 +374,55 @@ inv:
     keepDatasLore: |-
       Force the plugin to preserve players datas, even though stages have been edited.
       §cWARNING §c- enabling this option may break your players datas.
-    loreReset: '§dAll players'' advancement will be reset'
-    optionValue: '§8Value: §7{0}'
+    loreReset: '§6All players'' advancement will be reset'
+    optionValue: '§8Value: §e{0}'
     defaultValue: '§8(default value)'
   itemsSelect:
     name: Edit items
     none: |-
-      §7Move an item to here or
+      §eMove an item to here or
       click to open the item editor.
   itemSelect:
     name: Choose item
   npcCreate:
     name: Create NPC
-    setName: §dEdit NPC name
-    setSkin: §dEdit NPC skin
-    setType: §dEdit NPC type
+    setName: §6Edit NPC name
+    setSkin: §6Edit NPC skin
+    setType: §6Edit NPC type
     move:
-      itemName: §dMove
-      itemLore: §7Change the NPC location.
-    moveItem: §7Validate place
+      itemName: §6Move
+      itemLore: §eChange the NPC location.
+    moveItem: §eValidate place
   npcSelect:
     name: Select or create?
-    selectStageNPC: §dSelect existing NPC
-    createStageNPC: §dCreate NPC
+    selectStageNPC: §6Select existing NPC
+    createStageNPC: §6Create NPC
   entityType:
     name: Choose entity type
   chooseQuest:
     name: Which quest?
   mobs:
     name: Select mobs
-    none: §7Click to add a mob.
+    none: §eClick to add a mob.
     click: |-
-      §7Left-click to edit.
+      §eLeft-click to edit.
       Right-click to delete.
   mobSelect:
     name: Select mob type
-    bukkitEntityType: §dSelect entity type
-    mythicMob: §7Select Mythic Mob
-    epicBoss: §7Select Epic Boss
-    boss: §7Select a Boss
+    bukkitEntityType: §6Select entity type
+    mythicMob: §eSelect Mythic Mob
+    epicBoss: §eSelect Epic Boss
+    boss: §eSelect a Boss
   stageEnding:
-    locationTeleport: §dEdit teleport location
-    command: §dEdit executed command
+    locationTeleport: §6Edit teleport location
+    command: §6Edit executed command
   requirements:
     name: Requirements
   rewards:
     name: Rewards
     commands: 'Commands: {0}'
     teleportation: |-
-      §7Selected:
+      §eSelected:
        X: {0}
        Y: {1}
        Z: {2}
@@ -437,8 +437,8 @@ inv:
     notStarted: Not started quests
     finished: Finished quests
     inProgress: Quests in progress
-    loreCancel: §eLinker-klik §7om deze quest te beëindigen.
-    loreStart: §7Click to start the quest.
+    loreCancel: §eLinker-klik §eom deze quest te beëindigen.
+    loreStart: §eClick to start the quest.
     loreStartUnavailable: §cYou do not meet requirements to start the quest.
     timeToWait: §3{0} minute(s) before you can restart this quest.
     canRedo: §3You can restart this quest!
@@ -454,7 +454,7 @@ inv:
     isQuestItem: '§bQuest item:'
   command:
     name: Command
-    value: §dCommand
+    value: §6Command
     console: Console
     delay: §bDelay
   chooseAccount:
@@ -469,68 +469,68 @@ inv:
     noQuests: No quests have previously been created.
   commandsList:
     name: Command list
-    value: '§dCommand: {0}'
-    console: '§dConsole: {0}'
+    value: '§6Command: {0}'
+    console: '§6Console: {0}'
   block:
     name: Choose block
-    material: '§dMaterial: {0}'
-    blockData: '§dBlockdata (advanced)'
+    material: '§6Material: {0}'
+    blockData: '§6Blockdata (advanced)'
   blocksList:
     name: Select blocks
-    addBlock: §7Click to add a block.
+    addBlock: §eClick to add a block.
   blockAction:
     name: Select block action
-    location: §dSelect a precise location
-    material: §dSelect a block material
+    location: §6Select a precise location
+    material: §6Select a block material
   buckets:
     name: Bucket type
   permission:
     name: Choose permission
-    perm: §7Permission
-    world: §7World
+    perm: §ePermission
+    world: §eWorld
     worldGlobal: §bGlobal
     remove: Remove permission
-    removeLore: §7Permission will be taken off\n§7instead of given.
+    removeLore: §ePermission will be taken off\n§einstead of given.
   permissionList:
     name: Permissions list
-    removed: '§dTaken off: §7{0}'
-    world: '§dWorld: §7{0}'
+    removed: '§6Taken off: §e{0}'
+    world: '§6World: §e{0}'
   classesRequired.name: Classes required
   classesList.name: Classes list
   factionsRequired.name: Factions required
   factionsList.name: Factions list
 scoreboard:
-  name: §7Quests
+  name: §eQuests
   noLaunched: §cNo quests in progress.
   noLaunchedName: §cLoading
   noLaunchedDescription: §cLoading
-  textBetwteenBranch: §d or
+  textBetwteenBranch: §6 or
   stage:
     region: Vind {0}
     npc: Praat met {0}
     items: 'Breng items naar {0}:'
     mobs: Vermoord {0}
-    mine: §dMine {0}
-    placeBlocks: §dPlace {0}
+    mine: §6Mine {0}
+    placeBlocks: §6Place {0}
     chat: Typ {0} in de chat
     interact: Klik op blok op de locatie {0}
     interactMaterial: Klik op een {0} blok
-    fish: §dFish §7{0}
-    craft: §dCraft §7{0}
-    bucket: §dFill §7{0}
+    fish: §6Fish §e{0}
+    craft: §6Craft §e{0}
+    bucket: §6Fill §e{0}
     location: Ga naar {0}, {1}, {2} in {3} toe
-    playTime: §dPlay §7{0} game ticks
+    playTime: §6Play §e{0} game ticks
 indication:
   startQuest: §6Wil je de quest {0} starten?
   closeInventory: §6Wil je het menu sluiten?
   cancelQuest: §6Wil je de quest {0} beeindigen?
-  removeQuest: §7Are you sure you want to remove the quest {0}?
+  removeQuest: §eAre you sure you want to remove the quest {0}?
 misc:
   format:
-    prefix: §8[§dQuests§8] §7
-    npcText: §8[§7{2}/{3}§8] §d{0}:§7 {1}
-    selfText: §8[§7{2}/{3}§8] §d{0}:§7 {1}
-    offText: §8[§dQuests§8] §7{0}
+    prefix: §8[§6Quests§8] §e
+    npcText: §8[§e{2}/{3}§8] §6{0}:§e {1}
+    selfText: §8[§e{2}/{3}§8] §6{0}:§e {1}
+    offText: §8[§6Quests§8] §e{0}
   stageType:
     region: Find region
     npc: Find NPC
@@ -559,29 +559,29 @@ misc:
     combatLevel: §bCombat level required
     experienceLevel: §bExperience levels required
     permissions: §3Permission(s) required
-    scoreboard: §dScore required
-    region: §dRegion required
+    scoreboard: §6Score required
+    region: §6Region required
     placeholder: §bPlaceholder value required
-    quest: §7Quest required
-    mcMMOSkillLevel: §dSkill level required
-    money: §dMoney required
+    quest: §eQuest required
+    mcMMOSkillLevel: §6Skill level required
+    money: §6Money required
   bucket:
     water: Water bucket
     lava: Lava bucket
     milk: Milk bucket
   questItemLore: '§8Categorie: Quests'
-  hologramText: §7Quest
-  mobsProgression: '§7{0}: §r§d{1}/{2}'
-  entityType: '§dEntity type: {0}'
+  hologramText: §eQuest
+  mobsProgression: '§e{0}: §r§6{1}/{2}'
+  entityType: '§6Entity type: {0}'
   enabled: Enabled
   disabled: Disabled
   unknown: unknown
   notSet: §cnot set
   unused: §2Unused
-  used: §7Used
-  remove: §7Right-click to remove
+  used: §eUsed
+  remove: §eRight-click to remove
   or: of
-  amount: '§dAmount: {0}'
+  amount: '§6Amount: {0}'
   items: items
   expPoints: experience points
   'yes': 'Yes'
